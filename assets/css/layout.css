@@ -5,7 +5,9 @@
 }
 
 .main-nav {
-    border-top: 1px solid #fff;
+    background-color: #000;
+    position: relative;
+    z-index: 1000; /* 🔥 ESSENTIEL */
 }
 
 .header-container {
@@ -26,14 +28,16 @@
 }
 
 .club-title h1 {
-    margin: 0;           
+    margin: 0;      
+    color: #ffffff;     
     font-size: 2.6rem;
     font-weight: 800;
      line-height: 1; 
 }
 
 .club-title p {
-              
+    color: var(--accent-color);
+    letter-spacing: 0.05em;
     font-size: 1.3rem;
     font-style: italic;
     opacity: 0.85;
@@ -109,8 +113,9 @@
 
 .home-hero {
     display: flex;
+    align-items: flex-start; /* 🔥 clé */
+    gap: 40px;
     align-items: center;
-    gap: 20px;
 }
 
 @media (max-width: 900px) {

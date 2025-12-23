@@ -10,38 +10,28 @@
 .has-submenu {
     position: relative;
 }
-.has-submenu:hover .submenu,
-.has-submenu:focus-within .submenu {
+.has-submenu:hover > .submenu,
+.has-submenu:focus-within > .submenu {
     opacity: 1;
-    transform: translateY(0);
     visibility: visible;
+    transform: translateY(0);
     pointer-events: auto;
 }
 
 .submenu {
     position: absolute;
-    top: 120%;
+    z-index: 2000;
+    top: 100%;
     left: 0;
-
     background-color: #111;
     min-width: 240px;
-
     border-radius: 6px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-
     padding: 8px 0;
-    z-index: 1000;
-
-    /* État fermé */
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-8px);
+    transform: translateY(-10px);
     pointer-events: none;
-
-    transition:
-        opacity 0.25s ease,
-        transform 0.25s ease,
-        visibility 0.25s ease;
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
 }
 /* Ressources = même style qu'un lien */
 
@@ -87,17 +77,19 @@
 
 /* === CAROUSEL CONTAINER === */
 .carousel-container {
-    width: 420px;          /* largeur portrait */
+    width: 420px;     
     max-width: 100%;
+    flex: 0 0 420px;  /* 🔥 largeur fixe portrait */
 }
 
 /* zone visible du carousel */
 .carousel {
     position: relative;
     width: 100%;
-    height: clamp(320px, 45vh, 480px);
+    aspect-ratio: 3 / 4;   /* ✅ portrait réel */
     overflow: hidden;
     border-radius: 20px;
+    max-height: 600px;     /* sécurité écran */
 }
 
 .carousel-track {
@@ -111,6 +103,7 @@
     object-fit: cover;     /* 👈 clé pour le portrait */
     display: none;
 }
+
 
 .carousel-slide.active {
     display: block;
@@ -161,21 +154,44 @@
 
 /* Mobile */
 
+.hero {
+    margin-bottom: 30px;        /* séparation claire */
+    padding: 20px 0 10px 0;
+}
+
+.hero h2 {
+    margin-bottom: 5px;
+}
 .hero-text {
     max-width: 480px;              /* largeur maîtrisée */
     background: rgba(0, 0, 0, 0.65); /* lisibilité sur fond */
     color: #fff;
-    padding: 24px;
+    padding: 15px;
     border-radius: 16px;
     line-height: 1.6;
     font-size: 0.95rem;
+    flex: 0 0 55%;
 }
 
 .hero-text h2 {
     margin-top: 0;
     margin-bottom: 15px;
+    color: #fff;
+    text-shadow:
+        0 2px 4px rgba(0,0,0,0.8),
+        0 4px 10px rgba(0,0,0,0.6);
 }
 
 .hero-text p {
     margin-bottom: 12px;
+    color: #fff;
+    
+}
+
+.hero h2,
+.hero p {
+    color: #ffffffbe;
+    text-shadow:
+        0 2px 4px rgba(0,0,0,0.8),
+        0 4px 10px rgba(0,0,0,0.6);
 }

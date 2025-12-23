@@ -39,6 +39,13 @@ body {
     overflow: hidden; /* empêche le scroll interne */
 }
 
+.main-nav {
+    background-color: #000;
+    position: relative;
+    z-index: 1000;
+
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.3);
+}
 
 .main-content::before {
     content: "";
