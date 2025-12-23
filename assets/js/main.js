@@ -17,12 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
         submenuBtn.addEventListener("click", (e) => {
 
             if (window.innerWidth > 768) {
-                // Desktop : on empêche toute action JS
-                e.preventDefault();
-                return;
+                return; // Desktop : CSS only
             }
 
-            submenu.classList.toggle("open");
+            const isOpen = submenu.classList.toggle("open");
+            submenuBtn.setAttribute("aria-expanded", isOpen);
         });
     }
 });
+

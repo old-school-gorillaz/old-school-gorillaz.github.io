@@ -11,12 +11,7 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--text-color);
-    background-color: var(--secondary-color);
-    line-height: 1.6;
-}
+
 
 a {
     text-decoration: none;
@@ -26,17 +21,22 @@ a {
 ul {
     list-style: none;
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .main-content {
+    flex: 1; /* 🔥 prend l’espace restant */
     background-image: url("../images/fond/fond.png");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    position: relative;
-    /* Pour éviter que le fond soit collé */
-    padding: 60px 40px;
 
-    /* Assure une bonne lisibilité */
-    min-height: 100vh;
+    padding: 30px 40px; /* réduit */
+    overflow: hidden; /* empêche le scroll interne */
 }
 
 

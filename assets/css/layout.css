@@ -110,7 +110,7 @@
 .home-hero {
     display: flex;
     align-items: center;
-    gap: 30px; /* 🔥 réduis l’espace ici */
+    gap: 20px;
 }
 
 @media (max-width: 900px) {
