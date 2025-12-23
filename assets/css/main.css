@@ -26,3 +26,29 @@ a {
 ul {
     list-style: none;
 }
+.main-content {
+    background-image: url("../images/fond/fond.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+    /* Pour éviter que le fond soit collé */
+    padding: 60px 40px;
+
+    /* Assure une bonne lisibilité */
+    min-height: 100vh;
+}
+
+
+.main-content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /*background: rgba(255, 255, 255, 0.25); /* blanc légèrement transparent */
+    z-index: 0;
+}
+
+.main-content > * {
+    position: relative;
+    z-index: 1;
+}

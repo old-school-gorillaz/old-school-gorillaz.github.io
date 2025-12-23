@@ -106,12 +106,11 @@
     font-weight: bold;
 }
 
+
 .home-hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    padding: 60px 40px;
+    display: flex;
     align-items: center;
+    gap: 30px; /* 🔥 réduis l’espace ici */
 }
 
 @media (max-width: 900px) {
