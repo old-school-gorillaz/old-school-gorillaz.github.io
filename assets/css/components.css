@@ -1,0 +1,85 @@
+.menu a.active {
+    color: var(--accent-color);
+}
+
+
+/* === SOUS-MENU DESKTOP === */
+.burger {
+    display: none;
+}
+.has-submenu {
+    position: relative;
+}
+.has-submenu:hover .submenu,
+.has-submenu:focus-within .submenu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.submenu {
+    position: absolute;
+    top: 120%;
+    left: 0;
+
+    background-color: #111;
+    min-width: 240px;
+
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+
+    padding: 8px 0;
+    z-index: 1000;
+
+    /* Animation */
+    opacity: 0;
+    transform: translateY(-8px);
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+/* Ressources = même style qu'un lien */
+
+.submenu-title {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: inherit;
+
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Effet hover identique aux liens */
+.submenu-title:hover {
+    color: var(--accent-color);
+}
+
+/* UNIQUEMENT AU SURVOL */
+.has-submenu:hover > .submenu {
+    display: block;
+}
+
+
+.hero {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+

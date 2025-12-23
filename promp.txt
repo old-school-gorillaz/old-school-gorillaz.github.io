@@ -1,0 +1,29 @@
+Je voudrais concevoir un site web d'affichage pour une association de sport.
+Voici l'arborescence projet que j'utilise.
+project-root/
+│
+├── index.html
+├── pages/
+│   ├── association.html
+│   ├── planning.html
+│   ├── tarifs.html
+│   ├── contact.html
+│
+├── assets/
+│   ├── css/
+│   │   ├── main.css
+│   │   ├── layout.css
+│   │   ├── components.css
+│   │   └── responsive.css
+│   │
+│   ├── js/
+│   │   ├── main.js
+│   │
+│   ├── images/
+│   │  
+│   │
+│
+├── data/
+│   └──
+Tu peux ajouter des fichiers si necéssaire.
+Explicite à chaque fois les fichiers imapctés ou les nouveaux fichiers à créer. 
