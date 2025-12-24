@@ -1,11 +1,11 @@
 @media (max-width: 768px) {
 
     .burger {
-        display: block;
-        position: absolute;
-        top: 25px;
-        left: 20px;
+   display: block;
+        position: relative;      /* ✅ au lieu de absolute */
+        margin: 15px 0 10px 15px; /* espace propre */
         z-index: 1100;
+
         background: none;
         border: none;
         font-size: 2rem;
