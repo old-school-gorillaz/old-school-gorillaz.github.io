@@ -134,3 +134,18 @@
         height: 300px;
     }
 }
+
+/* ==========================
+   ASSOCIATION - 2 COLONNES
+========================== */
+
+.two-columns {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.association-image {
+    flex: 0.7;
+}
+

@@ -70,4 +70,24 @@
     .club-logo {
         width: 80px;
     }
+
+     .two-columns {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .association-image img {
+        max-height: 300px;
+        object-fit: cover;
+    }
+
+    .association-text p {
+        max-width: 100%;
+    }
+
+    /*carte*/
+    .map-wrapper {
+        height: 260px;
+    }
 }
+
