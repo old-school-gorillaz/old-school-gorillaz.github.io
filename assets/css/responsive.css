@@ -124,6 +124,19 @@
     .training-manifesto {
         font-size: 1.6rem;
     }
+
+        .inscription-section {
+        padding: 40px 20px;
+    }
+
+    .inscription-section h2 {
+        font-size: 2rem;
+    }
+
+    .download-btn {
+        width: 100%;
+        padding: 14px 20px;
+    }
     
 }
 
