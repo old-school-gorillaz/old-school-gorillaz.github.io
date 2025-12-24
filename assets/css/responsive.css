@@ -89,5 +89,41 @@
     .map-wrapper {
         height: 260px;
     }
+
+    .formules-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .page-intro h2 {
+        font-size: 2.1rem;
+    }
+
+    .formule-card {
+        padding: 30px 22px;
+    }
+
+    .formule-price {
+        font-size: 2.2rem;
+    }
+
+    .gorillaz-training {
+        padding: 45px 20px;
+    }
+
+    .gorillaz-training h2 {
+        font-size: 2rem;
+        margin-bottom: 35px;
+    }
+
+    .training-pillars {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .training-manifesto {
+        font-size: 1.6rem;
+    }
+    
 }
 

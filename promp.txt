@@ -26,4 +26,5 @@ project-root/
 ├── data/
 │   └──
 Tu peux ajouter des fichiers si necéssaire.
-Explicite à chaque fois les fichiers imapctés ou les nouveaux fichiers à créer. 
+Explicite à chaque fois les fichiers imapctés ou les nouveaux fichiers à créer.
+je te dirais les instructions pour créer la page .html voici le code 
