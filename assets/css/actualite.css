@@ -1,0 +1,127 @@
+/* ==========================
+   PAGE ACTUALITÉS
+========================== */
+
+.actualite-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.actualite-intro h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.actualite-intro p {
+    color: var(--accent-color);
+    font-style: italic;
+}
+
+/* LISTE */
+.actualite-list {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* EVENT CARD */
+.event-card {
+    display: flex;
+    gap: 30px;
+
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 24px;
+    padding: 30px;
+
+    box-shadow: 0 25px 60px rgba(0,0,0,0.7);
+}
+
+/* DATE */
+.event-date {
+    min-width: 90px;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.15);
+    padding-right: 20px;
+}
+
+.event-date .day {
+    display: block;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.event-date .month {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    opacity: 0.85;
+}
+.event-date .year {
+    display: block;
+    margin-top: 4px;
+    font-size: 1.2rem;
+    letter-spacing: 0.15em;
+    opacity: 0.6;
+}
+.event-date .month,
+.event-date .year {
+    color: var(--accent-color);   /* 🔥 doré comme le 24 */
+}
+
+/* CONTENT */
+.event-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.event-time {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.event-description {
+    color: #cfc9c2;
+    line-height: 1.6;
+    margin-bottom: 25px;
+
+    text-shadow:
+        0 2px 4px rgba(0,0,0,0.9),
+        0 4px 8px rgba(0,0,0,0.6);
+}
+
+/* BUTTON */
+.event-btn {
+    display: inline-block;
+    padding: 12px 26px;
+    border-radius: 30px;
+
+    background: var(--accent-color);
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(196,155,99,0.5);
+}
+
+@media (max-width: 768px) {
+
+    .event-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .event-date {
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+        padding-bottom: 15px;
+    }
+}
