@@ -495,3 +495,39 @@
 
     box-shadow: 0 0 0 1px rgba(196, 155, 99, 0.4);
 }
+
+
+.gorillaz-definition {
+    max-width: 1100px;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.gorillaz-definition h2 {
+    margin-bottom: 2rem;
+}
+
+.definition-card {
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.definition-card p {
+    color: #f2f2f2;   /* ✔ lisible sur fond sombre */
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+.definition-card strong {
+    color: var(--accent-color);
+}
+
+.definition-highlight {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: var(--accent-color);
+}
