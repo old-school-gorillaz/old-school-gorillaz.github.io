@@ -1,0 +1,57 @@
+/* =========================
+   Bureau / Trombinoscope
+   ========================= */
+
+.bureau-section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.bureau-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem;
+}
+
+.member-card {
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(196, 155, 99, 0.4);
+}
+
+.member-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+}
+
+.member-card img {
+    width: 100%;           /* occupe tout l'espace du conteneur */
+    max-width: 160px;      /* limite la taille max pour uniformité */
+    aspect-ratio: 1 / 1;   /* force le carré */
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid var(--accent-color);
+}
+
+.member-card h3 {
+    margin-bottom: 0.4rem;
+    color: #ffffff; /* texte blanc pour contraste avec fond sombre */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7); /* léger contour pour mieux se détacher */
+}
+
+.member-card .role {
+    color: var(--accent-color);
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+/* Mise en valeur Président d'honneur */
+.member-card.honor {
+    border: 1px solid rgba(196, 155, 99, 0.4);
+}
