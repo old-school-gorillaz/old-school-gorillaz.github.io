@@ -531,3 +531,50 @@
     letter-spacing: 0.05em;
     color: var(--accent-color);
 }
+
+/* ==========================
+   PAGE CONTACT
+========================== */
+
+.contact-section h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.contact-intro {
+    color: #fff;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.contact-card {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.8);
+}
+
+.contact-card h3 {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}

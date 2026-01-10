@@ -137,6 +137,10 @@
         width: 100%;
         padding: 14px 20px;
     }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
     
 }
 
